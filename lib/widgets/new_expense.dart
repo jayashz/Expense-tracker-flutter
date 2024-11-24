@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:expense_tracker/model/expense.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
@@ -114,7 +112,6 @@ class _NewExpenseState extends State<NewExpense> {
           ),
           const SizedBox(height: 20),
           DropdownButton(
-              dropdownColor: Colors.amber,
               borderRadius: BorderRadius.all(Radius.circular(10)),
               value: _selectedCategory,
               items: Category.values
@@ -135,14 +132,12 @@ class _NewExpenseState extends State<NewExpense> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               TextButton(
-                style: TextButton.styleFrom(foregroundColor: Colors.amber),
                 onPressed: () {
                   Navigator.pop(context);
                 },
                 child: Text('Cancel'),
               ),
               ElevatedButton(
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.amber),
                 onPressed: submitForm,
                 child: Text('Save'),
               ),
