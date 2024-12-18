@@ -28,7 +28,6 @@ void main() {
           ),
         ),
         home: Expenses(),
-        darkTheme: ThemeData.dark(),
       ),
     );
   });
